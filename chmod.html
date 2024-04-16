@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHMOD LINUX</title>
+    <style>
+
+        body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        }
+        
+        h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 10px;
+        }
+        
+        p {
+        text-align: justify;
+        margin: 10px 20px;
+        }
+        
+        img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        }
+        
+        ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 20px;
+        }
+        
+        li {
+        margin-bottom: 5px;
+        }
+        
+        li h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CHMOD</h1>
+    <p> Significa "cambiar modo" (del inglés: "change mode"), es un comando asociado con el sistema operativo UNIX que permite la asignación y cambios de permisos de acceso a carpetas o directorios.<br><br>
+        Los permisos se especifican del siguiente modo:
+    </p><br><br>
+    <img src="sintaxis.jpg" alt="CHMOD permisos">
+    <h2>Ejemplos:</h2>
+    <ul>
+        <li>
+          <h3>Añadir permisos:</h3>
+          <p>Agregar permiso de escritura al propietario: <strong>chmod +w archivo.txt</strong></p>          
+          <p>Agregar permisos de lectura, escritura y ejecución al propietario y al grupo: <strong>chmod ug+rwx archivo.txt</strong></p>
+        </li>
+        <li>
+          <h3>Eliminar permisos:</h3>
+          <p>Eliminamos permiso de escritura al propietario: <strong>chmod -w archivo.txt</strong></p>
+          <p>Eliminamos permisos de lectura, escritura y ejecución al propietario y al grupo: <strong>chmod ug-rwx archivo.txt</strong></p>
+        </li>
+        <li>
+          <h3>Modificadores:</h3>
+          <p>No visualiza los posibles mensajes de error que puedan ocurrir debido a conflictos en la asignación de permisos: <strong>chmod -f archivo.txt</strong></p>
+          <p>Lista los ficheros y directorios a los que se les va aplicando el comando a medida que el mismo se ejecuta: <strong>chmod -v archivo.txt</strong></p>
+        </li>
+      </ul>
+</body>
+</html>
